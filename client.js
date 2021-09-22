@@ -10,8 +10,9 @@ const connect = function () {
   conn.setEncoding("utf8");
 
   conn.on("connect", () => {
-    console.log("Connection established with server.");
+    console.log("Successfully connected with game server.");
   });
+
 
   conn.on("data", (data) => {
     console.log(`Data received from the server: ${data}`);
@@ -21,7 +22,11 @@ const connect = function () {
     console.log(`Server shutdown!`);
   });
 
+  conn.write("Name: TRB");
+
   return conn;
 };
+
+
 
 module.exports = connect;
