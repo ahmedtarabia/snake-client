@@ -23,6 +23,7 @@ const connect = function () {
   });
 
   conn.write("Name: ANT");
+  conn.write("Say: How are you?");
   // conn.write("Move: up");
   // conn.write("Move: down");
   // setTimeout(() => {conn.write("Move: up")}, 500);
