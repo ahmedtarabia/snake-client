@@ -22,7 +22,7 @@ const connect = function () {
     console.log(`Server shutdown!`);
   });
 
-  conn.write("Name: TRB");
+  conn.write("Name: ANT");
   // conn.write("Move: up");
   // conn.write("Move: down");
   // setTimeout(() => {conn.write("Move: up")}, 500);
@@ -31,7 +31,7 @@ const connect = function () {
   // setTimeout(() => {conn.write("Move: up")}, 2000);
   // setTimeout(() => {conn.write("Move: right")}, 2500);
   // setTimeout(() => {conn.write("Move: down")}, 3000);
-  setInterval(() => {conn.write("Move: up")}, 500);
+  // setInterval(() => {conn.write("Move: up")}, 500);
   // conn.write("Move: right")
 
   return conn;
